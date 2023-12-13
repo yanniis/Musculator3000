@@ -1,0 +1,175 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+  background-color: blue;
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+  border: 2px solid purple;
+}
+
+
+[type="checkbox"]:checked+span:not(.lever):before {
+  top: -4px;
+  left: -5px;
+  width: 12px;
+  height: 22px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid blue;
+  border-bottom: 2px solid blue;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+  margin-bottom: 5%;
+}
+
+.radio {
+  margin-left: 5%;
+}
+.text {
+  width: 50%;
+  margin: 0 auto;
+
+}
+
+.ex {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+}
+
+h5 {
+  text-decoration: underline;
+}
+
+.container {
+  margin-top: 10%;
+}
+
+.choice {
+  display: flex;
+  justify-content: center;
+}
+
+/* Bouton burger */
+nav ul.menu_deroulant {
+
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1), translate(130);
+  opacity: 1;
+  background-color: #4E4E4E;
+  transition: all 0.5s ease;
+  z-index: 1;
+
+  }
+
+
+
+nav ul {
+  height: 300px;
+  position: absolute;
+  top: -300px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-out;
+  transform: translate(130);
+  opacity: 0;
+  
+}
+
+
+nav div.menu_burger {
+  width: 60px;
+  height: 100%;
+  background-image: url(../assets/imgs/svg/btn_menu.svg);
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  right: 2%;
+  background-repeat: no-repeat;
+}
+
+nav div.ouvert {
+  background-image: url(../assets/imgs/svg/btn_fermer.svg);
+}
+
+
+#formMuscu {
+  display: none;
+}
+
+#formLog {
+  display: none;
+}
+
+#alert {
+  display: none;
+  width: 80%;
+  margin-left: 38%;
+  margin-bottom: 30px;
+  color: #3A0CA3;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.nav-extended {
+  background-color: #7209B7;
+}
+
+.button-color {
+  background-color: #F72585;
+}
+
+lord-icon {
+  position: absolute;
+  left: 15%;
+  top: 35px;
+}
+
+h6 {
+  margin-top: 0px;
+}
+
+.tabs .tab a:focus.active, .tabs .tab a.active{
+  background-color: #E0F0F5;
+  color: #4CC9F0;
+}
+
+.tabs .tab a {
+  color: #4CC9F0;
+}
+
+.tabs .tab a:hover {
+  color: #4361EE;
+}
+
+.tabs .indicator {
+  background-color: #4361EE;
+}
+
+span {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}

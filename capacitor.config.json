@@ -1,0 +1,21 @@
+{
+  "appId": "com.example.app",
+  "appName": "Musculator3000",
+  "bundledWebRuntime": false,
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 3000,
+      "launchAutoHide": false,
+      "backgroundColor": "#ffffff",
+      "androidSplashResourceName": "splash",
+      "androidScaleType": "CENTER_CROP",
+      "androidSpinnerStyle": "large",
+      "iosSpinnerStyle": "small",
+      "iosSpinnerColor": "#999999",
+      "showSpinner": true,
+      "showTitle": true,
+      "title": "My App"
+    }
+  }
+}
